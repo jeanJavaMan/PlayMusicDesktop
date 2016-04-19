@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.jeanderson.controller.TelaController">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="587.0">
+         <image>
+            <Image url="@../img/iurd.jpg" />
+         </image></ImageView>
+      <GridPane layoutX="25.0" layoutY="277.0" prefHeight="27.0" prefWidth="234.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="62.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="172.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Meu IP:" textFill="#0f110f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_ip" prefHeight="17.0" prefWidth="165.0" text="IP DO SERVER" textFill="#f52905" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" top="4.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="249.0" layoutY="41.0" text="Tocando">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_tocando" editable="false" layoutX="137.0" layoutY="68.0" prefHeight="200.0" prefWidth="293.0" promptText="ATENÇÃO: Verifique se o seu celular está configurado para o IP deste programa" wrapText="true" />
+      <Button fx:id="btnParar" layoutX="242.0" layoutY="292.0" mnemonicParsing="false" text="Parar Musica" />
+   </children>
+</AnchorPane>
